@@ -1,0 +1,397 @@
+%!TEX program = lualatex
+
+\documentclass[doublesided,
+                paper=a4,
+               fontsize=10pt
+              ]{my_resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont{Carlito}
+
+\usepackage{bookmark}
+%\usepackage{fontawesome}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+%\colorlet{accent}{awesome-red}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+\usepackage{csquotes}
+\MakeOuterQuote{"}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\highlightbar{
+
+    \vspace{20pt}
+
+    \email{crocioni.giulia@gmail.com}
+
+    \phone{}
+    
+    \linkedin{linkedin.com/in/giulia-crocioni/}
+
+    \location{Milano, Italy}
+    
+    \medskip
+    
+    \vspace{6.8pt}
+    \section{Skills}
+    \medskip
+    \vspace{1.5pt}
+    \textbf{Excellent team working skills, with strong propensity for team leading.}
+    \medskip
+    \smallskip
+    \smallskip
+    
+    \skillsection{\textbf{Programming}}
+    \vspace{-1pt}   
+    \smallskip
+    \vspace{3pt}
+    
+    \tag{Python}
+    \tag{Matlab}
+    \tag{LaTeX}
+    \tag{SQL}
+    
+    \medskip
+    \smallskip
+    \smallskip
+    \vspace{4pt}
+    
+    \skillsection{\textbf{Software \& Tools}}
+    \smallskip
+    \vspace{-1pt}
+    \textbf{Data handling} -- SciPy, Pandas, PySpark
+    
+    \vspace{8pt}
+    
+    \textbf{Data modeling} -- SciKit-Learn, XGBoost, Keras, TensorFlow
+    
+    \vspace{8pt}
+    
+    \textbf{Visualization} -- Matplotlib, Seaborn, Plotly
+    
+    \vspace{8pt}
+    
+    \textbf{Notebooks} -- Jupyter, Apache Zeppelin
+    
+    \vspace{8pt}
+    
+    \textbf{Code Editors} -- Visual Studio Code
+    
+    \vspace{8pt}
+
+    \textbf{CAD Software Tools} -- SolidWorks, KiCad
+    
+    \vspace{8pt}
+
+    \textbf{LabVIEW}
+
+    \vspace{8pt}
+
+    \textbf{Microsoft Office}
+    
+    \smallskip
+    
+    \medskip
+    \smallskip
+    \vspace{-1pt}
+    \skillsection{\textbf{Languages}}
+    \smallskip
+    \skill{Italian}{5}
+    \skill{English (TOEFL - C1)}{4}
+    \vspace{1mm}
+    
+    \smallskip
+    \vspace{-2pt}
+    
+    \section{Certificates}
+    \vspace{2.6pt}
+    \medskip
+
+    \simpleskill{AI Privacy and Convenience}
+    \vspace{1pt}
+    Exploration of fundamental concepts involved in security, privacy and ethics of machine learning projects, and how that affects user privacy and transparency. w\textit{Issued by Coursera, Dec. 2020.}   
+
+    \vspace{14.5pt}
+    
+    \simpleskill{Python Classes and Inheritance}
+    \vspace{1pt}
+    \textit{Authorized by the University of Michigan, and Issued by Coursera, Dec. 2020.}
+    
+    \vspace{14.5pt}
+    
+    \simpleskill{Graduation to Professional Industrial Engineer (Italian legislation)}
+    \vspace{1pt}
+    \textit{Politecnico di Milano, Sept. 2020.}
+    
+    \vspace{14.5pt}
+    
+    \simpleskill{IBM AI Engineering, Specialization}
+    \vspace{1pt}
+    Scalable Machine Learning on Big Data using Apache Spark, Deep Learning \& Neural Networks with Keras, PyTorch and Tensorflow, AI Capstone Project with Deep Learning. \textit{Issued by Coursera, Jun. 2020.}
+
+}
+
+
+\mainbar{
+
+    \begin{minipage}[t][2em]{\linewidth}
+    {\huge\bfseries
+    \color{heading}\MakeUppercase{Giulia Crocioni}
+    }
+    \end{minipage}
+    
+    \vspace{-1pt}
+    
+    \textbf{\large\color{happycolor}{Big Data Scientist \hspace{2pt}\faAt\hspace{2pt} Allianz S.p.a.}}
+    
+    \medskip
+    \smallskip
+
+    \color{mediumgray}{\normalsize{\textbf{Biomedical Engineer highly passionate about using Big Data to support decision making in fast growing fields, with a special interest on healthcare.}}}
+    
+    \medskip
+    \vspace{6.7pt}
+    
+    \section{Work Experience}
+    \cvevent{Big Data Scientist}{Allianz S.p.a}{Jan. 2020 -- Ongoing}{Milan, Italy}
+    \small{Enrolled in Allianz Talent Program in Big Data Science. Currently developing Machine Learning models to drive insurance pricing strategies. I deal with data extraction, data analytics, and model development.
+    }
+
+    \vspace{-1pt}
+    {\color{highlightbarcolor}{\rule{\linewidth}{1.0pt}}}
+
+    \cvevent{Research Intern}{STMicroelectronics}{Sept. 2019 -- Dec. 2019}{Agrate Brianza, Italy}
+    \small{Research \& Development in Artificial Intelligence Tools and Application division. Time series predictive modeling through Deep Learning algorithms, and Neural Networks embedding on IoT (STM32) and automotive-grade (SPC58) microcontrollers.}
+
+    \vspace{-1pt}
+    {\color{highlightbarcolor}{\rule{\linewidth}{1.0pt}}}
+    
+    \cvevent{IEEE Italy Section website Admin}{IEEE Italy}{Jul. 2017 -- Jul. 2019}{Milan, Italy}
+    \small{Maintenance of the website contents and functionalities (e.g. newsletter updates).}
+
+    \vspace{-1pt}
+    {\color{highlightbarcolor}{\rule{\linewidth}{1.0pt}}}
+
+    \cvevent{Teaching Assistant}{University of Illinois at Chicago}{Jan. 2019 -- May 2019}{Chicago, IL, US}
+    \small{Teaching Assistant in \textit{Neural Engineering - Introduction to Hybrid Neural Systems}. Supporting students in the development of conditioning circuits for biomedical signals acquisition, and making use of LabVIEW for digital preprocessing and data visualization.}
+    
+    \vspace{6pt}
+    
+    \section{Education}
+    
+    \cvevent{Second Level Master Degree}{Cefriel}{Jan. 2020 -- Ongoing}{Milan, Italy}
+    \small{Data-driven decision making, and data science for business innovation. Structured, unstructured, and continuous data ingestion. Data preparation for different data loads (SQL, python, pyspark, kafka), and data quality (e.g. missing values, rebalancing, ...).}
+
+    \vspace{-1pt}
+    {\color{highlightbarcolor}{\rule{\linewidth}{1.0pt}}}
+
+    \cvevent{M.Sc. in Biomedical Engineering}{Politecnico di Milano}{Sept. 2017 -- Oct. 2019}{Milan, Italy}
+    \small{Specialization in Biomedical Technologies for Electronics. Thesis: "Analysis, Design and Testing of a Configurable Full-Field Stimulus Source for Electroretinography". Improvement of electronic design, and further device testing. Grade: 110/110 cum laude}
+
+    \vspace{-1pt}
+    {\color{highlightbarcolor}{\rule{\linewidth}{1.0pt}}}
+
+    \cvevent{M.Sc. in Bioengineering}{University of Illinois at Chicago}{Jan. 2018 -- Aug. 2019}{Chicago, IL, US}
+    \small{Thesis: "Design, Fabrication and Testing of a Configurable Full-Field Stimulus Source for Electroretinography". Mechanical and electronic design of the stimulus source, and assembling and testing of the prototype. Grade Point Average (GPA): 4.0/4.0}
+
+    \vspace{-1pt}
+    {\color{highlightbarcolor}{\rule{\linewidth}{1.0pt}}}
+    
+    \cvevent{B.Sc. in Biomedical Engineering}{Politecnico di Milano}{Oct. 2014 -- Jul. 2017}{Milan, Italy}
+    \small{Thesis: "Implementation of an IoT node for biomedical devices". Implementation of an IoT node for clinical data collection and atrial fibrillation detection through electrocardiogram analysis, using Machine Learning clustering. Grade: 110/110 cum laude}
+
+}
+
+\makebody
+\clearpage
+
+
+\pagestyle{highlightmain}
+\highlightbar{
+
+    \section{Activities}
+    \medskip
+    \vspace{5pt}
+    
+    \simpleskill{Smarter Engineering For Industry 4.0: 3${^{rd}}$ IEEE Italy Section Summer School}
+    \smallskip
+    Training on topics related to Industry 4.0, such as human-machine interfaces, and telemedicine. 
+    
+    \textit{Department of Engineering - University of Perugia, Sept. 2017.}
+    
+    \vspace{4mm}
+    
+    \simpleskill{Xilinx PYNQ Hackathon}
+    \smallskip
+    Competition aimed at developing ideas on the PYNQ platform, choosing applications related to the biomedical field. My project was about snore and breathing interruption identification in subjects suffering from obstructive sleep apnea. 
+    
+    \textit{NECST Lab, Politecnico di Milano, Jul. 2016.}
+
+    \vspace{25.2pt}
+    
+    \section{Hobbies}
+    \medskip
+    \vspace{5pt}
+    
+    \simpleskill{Aerial Dancing}
+    \smallskip
+    After 15 years of ballet, modern, hip hop and contemporary dancing, in the last few years I have become passionate about aerial disciplines.
+    
+    \vspace{4mm}
+    
+    \simpleskill{Piano}
+    \smallskip
+    I love playing the piano since I was a child, and I attended the first two years of music conservatory. 
+    
+    \vspace{25.2pt}
+    
+    \section{Referees}
+    
+    \medskip
+    \vspace{5pt}
+    
+    \simpleskill{Prof. Giambattista Gruosso}
+    \smallskip
+    \textcolor{happycolor}\faAt\hspace{.5em}\color{heading}Politecnico di Milano
+    
+    \smallskip
+    
+    \color{happycolor}\faEnvelope\hspace{.5em}\color{heading}giambattista.gruosso@polimi.it
+    
+    \bigskip
+    
+    \simpleskill{Prof. John R. Hetling}
+    \smallskip
+    \color{happycolor}\faAt\hspace{.5em}\color{heading}University of Illinois at Chicago
+    
+    \smallskip
+    
+    \color{happycolor}\faEnvelope\hspace{.5em}\color{heading}jhetli1@uic.edu
+    
+    \bigskip
+    
+    \simpleskill{Danilo Pau}
+    \smallskip
+    \color{happycolor}\faAt\hspace{.5em}\color{heading}STMicroelectronics
+    
+    \smallskip
+    
+    \color{happycolor}\faEnvelope\hspace{.5em}\color{heading}danilo.pau@st.com
+
+}
+
+
+\mainbar{
+
+    \section{Publications}
+    \pubforcefullwidth
+    \medskip
+    \vspace{5pt}
+    
+    \textcolor{happycolor}\faSlideshare\hspace{2mm}\subsection{Conference Proceedings}
+    
+    \vspace{-8pt}
+
+
+    \publication
+    	{"Li-Ion Batteries Releasable Capacity Estimation with Neural Networks on Intelligent IoT Microcontrollers"} % Title
+    	{Comparison of different Machine Learning algorithms for Lithium-Ion batteries releasable capacity estimation analysing accuracy versus complexity, with special focus on Artificial Neural Networks, and resource constrained microcontrollers.}
+    	{\textbf{G. Crocioni}, D. Pau, G. Gruosso} % Authors
+    	{Jun. 2020} % Year
+    	{IEEE 20${^{th}}$ Mediterranean Electrotechnical Conference (MELECON), Palermo, Italy} % Journal
+    
+    \vspace{-1pt}
+    {\color{highlightbarcolor}{\rule{\linewidth}{1.0pt}}}
+    
+    \publication
+    	{"A Highly-Configurable Full-Field Stimulus Source for Electroretinography"} % Title
+    	{A highly-configurable full-field stimulus source for electroretinography based on LEDs, capable of presenting an arbitrary pattern of pixels to the entire visual field of a test subject. Aimed at bringing together the functionalities of the existing stimulators.}
+    	{\textbf{G. Crocioni}, G. Gruosso, J. Hetling} % Authors
+    	{Jun. 2020} % Year
+    	{IEEE 20${^{th}}$ Mediterranean Electrotechnical Conference ( MELECON), Palermo, Italy} % Journal
+
+    \vspace{-1pt}
+    {\color{highlightbarcolor}{\rule{\linewidth}{1.0pt}}}
+    
+    \publication
+    	{"GLOS: Glove for Speech recognition"} % Title
+    	{A low-cost, non-invasive and wearable device that will allow the deafblind individuals to comprehend speeches in real-time. The speech recorded from a microphone is processed by the board and encoded into 5 haptic vibrating modules attached to a glove.}
+    	{\textbf{G. Crocioni}, C. Di Vece, H. Esmailbigi} % Authors
+    	{Jul. 2019} % Year
+    	{41${^{st}}$ Annual International Conference of the IEEE Engineering in Medicine \& Biology Society (EMBC), Berlin, Germany} % Journal
+
+    \vspace{8pt}
+    {\color{highlightbarcolor}{\rule{\linewidth}{1.0pt}}}
+    
+    \publication
+    	{"Implementation of an IoT Node for Biomedical Applications"} % Title
+    	{Implementation of an IoT node to collect clinical data and to detect atrial fibrillation through the analysis of electrocardiogram, and device validation on a sample of patients affected by atrial fibrillation and other heart diseases.}
+    	{S. B. Bonfanti, \textbf{G. Crocioni}, \textit{et al.}} % Authors
+    	{Sept. 2018} % Year
+    	{IEEE 4${^{th}}$ International Forum on Research and Technology for Society and Industry (RTSI), Palermo, Italy} % Journal
+
+    \vspace{8pt}
+
+    \medskip
+    
+    \textcolor{happycolor}\faFileTextO\hspace{2mm}\subsection{Journal Articles}
+    \vspace{-8pt}
+    
+    
+    \publication
+    	{"Li-Ion Batteries Parameter Estimation With Tiny Neural Networks Embedded on Intelligent IoT Microcontrollers"} % Title
+    	{Addition of Gated Recurrent Unit networks to the comparative analysis. Quantization of Neural Networks via STM32Cube.AI to decrease models size with minimal accuracy loss, and performances comparison with TensorFlow Lite for Microcontrollers.}
+    	{\textbf{G. Crocioni}, D. Pau, J. Delorme, G. Gruosso} % Authors
+    	{Jul. 2020} % Year
+    	{IEEE Access, vol. 8, pp. 122135-122146} % Journal
+
+    \medskip
+    \medskip
+    
+    \textcolor{happycolor}\faSpinner\hspace{2mm}\subsection{Under Review}
+    \vspace{-8pt}
+
+
+    \publication
+    	{"Characterization of Neural Networks Automatically Mapped on Automotive-grade Microcontrollers"} % Title
+    	{}
+    	{\textbf{G. Crocioni}, D. Pau, \textit{et al.}} % Authors
+    	{Submitted} % Year
+    	{}
+    	
+}
+
+\makebody
+\clearpage
+
+\end{document}
